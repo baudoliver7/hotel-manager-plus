@@ -1,0 +1,16 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\MdiModeDiffere.o
+./debug\BDConnexion.o
+./debug\DialogContact.o
+./debug\BDRechercherUtil.o
+./debug\BDStatutProduit.o
+./debug\moc_mainwindow.o
+./debug\moc_MdiModeDiffere.o
+./debug\moc_BDConnexion.o
+./debug\moc_DialogContact.o
+./debug\moc_BDRechercherUtil.o
+./debug\moc_BDStatutProduit.o
+./debug\qrc_images.o
+);

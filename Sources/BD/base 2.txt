@@ -1,0 +1,328 @@
+-- phpMyAdmin SQL Dump
+-- version 2.11.0
+-- http://www.phpmyadmin.net
+--
+-- Serveur: localhost
+-- Généré le : Sam 17 Décembre 2011 à 03:43
+-- Version du serveur: 5.0.45
+-- Version de PHP: 5.2.4
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Base de données: `clientele`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `chambre`
+--
+
+CREATE TABLE `chambre` (
+  `IdentiteCh` varchar(15) NOT NULL,
+  `Numero` int(11) NOT NULL,
+  `Initial` varchar(15) NOT NULL,
+  PRIMARY KEY  (`IdentiteCh`),
+  KEY `Initial` (`Initial`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `chambre`
+--
+
+INSERT INTO `chambre` (`IdentiteCh`, `Numero`, `Initial`) VALUES
+('CC2', 2, 'CC'),
+('CC3', 3, 'CC'),
+('CC4', 4, 'CC'),
+('CC5', 5, 'CC'),
+('CC6', 6, 'CC'),
+('CC7', 7, 'CC'),
+('CC8', 8, 'CC'),
+('CV1', 1, 'CV'),
+('CV10', 10, 'CV'),
+('CV11', 11, 'CV'),
+('CV2', 2, 'CV'),
+('CV3', 3, 'CV'),
+('CV4', 4, 'CV'),
+('CV5', 5, 'CV'),
+('CV6', 6, 'CV'),
+('CV7', 7, 'CV'),
+('CV8', 8, 'CV'),
+('CV9', 9, 'CV'),
+('S1', 1, 'S'),
+('S2', 2, 'S'),
+('S3', 3, 'S'),
+('S4', 4, 'S'),
+('S5', 5, 'S'),
+('S6', 6, 'S');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `client`
+--
+
+CREATE TABLE `client` (
+  `CodeClient` int(11) NOT NULL auto_increment,
+  `Nom` varchar(30) NOT NULL,
+  `Prenoms` varchar(50) NOT NULL,
+  `Homme` tinyint(1) NOT NULL,
+  `Type` varchar(15) NOT NULL,
+  `NumeroCel` varchar(15) default NULL,
+  `NumeroTel` varchar(15) default NULL,
+  `Email` varchar(30) default NULL,
+  `BoitePostale` varchar(30) default NULL,
+  PRIMARY KEY  (`CodeClient`),
+  KEY `Type` (`Type`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Contenu de la table `client`
+--
+
+INSERT INTO `client` (`CodeClient`, `Nom`, `Prenoms`, `Homme`, `Type`, `NumeroCel`, `NumeroTel`, `Email`, `BoitePostale`) VALUES
+(1, 'NEME', 'Bagou Etienne', 1, 'Normal', '45-21-47-88 / -', '---', '', NULL);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `initialdechambre`
+--
+
+CREATE TABLE `initialdechambre` (
+  `Initial` varchar(15) NOT NULL,
+  `TypeDeChambre` varchar(30) NOT NULL,
+  `TypeDisponible` tinyint(1) NOT NULL,
+  PRIMARY KEY  (`Initial`),
+  KEY `TypeDeChambre` (`TypeDeChambre`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `initialdechambre`
+--
+
+INSERT INTO `initialdechambre` (`Initial`, `TypeDeChambre`, `TypeDisponible`) VALUES
+('CC', 'Chambre climatisée', 1),
+('CV', 'Chambre ventilée', 1),
+('S', 'Suite', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `occupation`
+--
+
+CREATE TABLE `occupation` (
+  `NumOccupation` int(11) NOT NULL auto_increment,
+  `DateOccupation` varchar(50) NOT NULL,
+  `DureeOccupation` smallint(6) NOT NULL,
+  `DateFinOccupation` varchar(50) default NULL,
+  `CodeClient` int(11) NOT NULL,
+  `IdentiteCh` varchar(15) NOT NULL,
+  `Cout` int(11) NOT NULL,
+  PRIMARY KEY  (`NumOccupation`),
+  KEY `CodeClient` (`CodeClient`,`IdentiteCh`),
+  KEY `IdentiteCh` (`IdentiteCh`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Contenu de la table `occupation`
+--
+
+INSERT INTO `occupation` (`NumOccupation`, `DateOccupation`, `DureeOccupation`, `DateFinOccupation`, `CodeClient`, `IdentiteCh`, `Cout`) VALUES
+(1, 'ven. 16. déc. 22:44:32 2011', 1, NULL, 1, 'CV1', 2000);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `recepteur`
+--
+
+CREATE TABLE `recepteur` (
+  `MatriculeRecepteur` varchar(50) NOT NULL,
+  `Nom` varchar(30) NOT NULL,
+  `Prenoms` varchar(50) NOT NULL,
+  `SexePrecis` varchar(10) NOT NULL,
+  `Login` varchar(50) NOT NULL,
+  `Password` varchar(16) NOT NULL,
+  `Residence` varchar(50) NOT NULL,
+  `NumeroCel` varchar(15) default NULL,
+  `NumeroTel` varchar(15) default NULL,
+  `Email` varchar(30) default NULL,
+  `BoitePostale` varchar(30) default NULL,
+  `Statut` varchar(15) NOT NULL,
+  PRIMARY KEY  (`MatriculeRecepteur`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `recepteur`
+--
+
+INSERT INTO `recepteur` (`MatriculeRecepteur`, `Nom`, `Prenoms`, `SexePrecis`, `Login`, `Password`, `Residence`, `NumeroCel`, `NumeroTel`, `Email`, `BoitePostale`, `Statut`) VALUES
+('ADMIN', 'OURA', 'Olivier', 'M.', 'AigleRoyal78', 'foi', 'INP CENTRE', '44-34-86-57', '', 'baudolivier@yahoo.fr', '', 'Actif'),
+('RECEPTEUR01', 'OURA', 'Olivier Baudouin', 'M.', 'AigleRoyal7', 'foi', 'INP CENTRE', '44-34-86-57', '', 'baudolivier@yahoo.fr', '', 'Actif');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `recevoir`
+--
+
+CREATE TABLE `recevoir` (
+  `NumRecevoir` int(11) NOT NULL auto_increment,
+  `DateDeReception` varchar(50) NOT NULL,
+  `MatriculeRecepteur` varchar(50) NOT NULL,
+  `CodeClient` int(11) NOT NULL,
+  PRIMARY KEY  (`NumRecevoir`),
+  KEY `MatriculeRecepteur` (`MatriculeRecepteur`,`CodeClient`),
+  KEY `CodeClient` (`CodeClient`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Contenu de la table `recevoir`
+--
+
+INSERT INTO `recevoir` (`NumRecevoir`, `DateDeReception`, `MatriculeRecepteur`, `CodeClient`) VALUES
+(1, 'ven. 16. déc. 22:44:32 2011', 'RECEPTEUR01', 1);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `reservation`
+--
+
+CREATE TABLE `reservation` (
+  `NumReservation` int(11) NOT NULL auto_increment,
+  `DateDeDemande` varchar(50) NOT NULL,
+  `DateOccupation` varchar(50) NOT NULL,
+  `DureeOccupation` smallint(6) NOT NULL,
+  `Annuler` tinyint(1) default '0',
+  `DateAnnulation` varchar(50) default NULL,
+  `Effectuer` tinyint(1) default '0',
+  `CodeClient` int(11) NOT NULL,
+  `IdentiteCh` varchar(15) NOT NULL,
+  PRIMARY KEY  (`NumReservation`),
+  KEY `CodeClient` (`CodeClient`,`IdentiteCh`),
+  KEY `IdentiteCh` (`IdentiteCh`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+-- Contenu de la table `reservation`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `service`
+--
+
+CREATE TABLE `service` (
+  `NumService` int(11) NOT NULL,
+  `HeureDebut` varchar(50) NOT NULL,
+  `HeureFin` varchar(50) default NULL,
+  `MatriculeRecepteur` varchar(50) NOT NULL,
+  PRIMARY KEY  (`NumService`,`MatriculeRecepteur`),
+  KEY `MatriculeRecepteur` (`MatriculeRecepteur`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `service`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `tarif`
+--
+
+CREATE TABLE `tarif` (
+  `TypeDeChambre` varchar(30) NOT NULL,
+  `PrixUnitaireNormal` int(11) NOT NULL,
+  `PrixUnitairePrivilegie` int(11) NOT NULL,
+  `PrixUnitaireFidele` int(11) NOT NULL,
+  PRIMARY KEY  (`TypeDeChambre`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `tarif`
+--
+
+INSERT INTO `tarif` (`TypeDeChambre`, `PrixUnitaireNormal`, `PrixUnitairePrivilegie`, `PrixUnitaireFidele`) VALUES
+('Chambre climatisée', 3000, 1500, 2000),
+('Chambre ventilée', 2000, 1000, 1500),
+('Suite', 10000, 5000, 8000);
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `typedeclient`
+--
+
+CREATE TABLE `typedeclient` (
+  `Type` varchar(15) NOT NULL,
+  `NbDeNuits` int(11) NOT NULL,
+  `Intervalle` varchar(15) NOT NULL,
+  `Periode` varchar(15) NOT NULL,
+  PRIMARY KEY  (`Type`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `typedeclient`
+--
+
+INSERT INTO `typedeclient` (`Type`, `NbDeNuits`, `Intervalle`, `Periode`) VALUES
+('Fidèle', 2, 'Semaine', '3 mois'),
+('Normal', 1, 'Mois', '3 mois'),
+('Privilégié', 5, 'Semaine', '3 mois');
+
+--
+-- Contraintes pour les tables exportées
+--
+
+--
+-- Contraintes pour la table `chambre`
+--
+ALTER TABLE `chambre`
+  ADD CONSTRAINT `chambre_ibfk_1` FOREIGN KEY (`Initial`) REFERENCES `initialdechambre` (`Initial`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Contraintes pour la table `client`
+--
+ALTER TABLE `client`
+  ADD CONSTRAINT `client_ibfk_1` FOREIGN KEY (`Type`) REFERENCES `typedeclient` (`Type`);
+
+--
+-- Contraintes pour la table `initialdechambre`
+--
+ALTER TABLE `initialdechambre`
+  ADD CONSTRAINT `initialdechambre_ibfk_1` FOREIGN KEY (`TypeDeChambre`) REFERENCES `tarif` (`TypeDeChambre`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Contraintes pour la table `occupation`
+--
+ALTER TABLE `occupation`
+  ADD CONSTRAINT `occupation_ibfk_1` FOREIGN KEY (`CodeClient`) REFERENCES `client` (`CodeClient`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `occupation_ibfk_2` FOREIGN KEY (`IdentiteCh`) REFERENCES `chambre` (`IdentiteCh`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Contraintes pour la table `recevoir`
+--
+ALTER TABLE `recevoir`
+  ADD CONSTRAINT `recevoir_ibfk_1` FOREIGN KEY (`MatriculeRecepteur`) REFERENCES `recepteur` (`MatriculeRecepteur`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `recevoir_ibfk_2` FOREIGN KEY (`CodeClient`) REFERENCES `client` (`CodeClient`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Contraintes pour la table `reservation`
+--
+ALTER TABLE `reservation`
+  ADD CONSTRAINT `reservation_ibfk_1` FOREIGN KEY (`CodeClient`) REFERENCES `client` (`CodeClient`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `reservation_ibfk_2` FOREIGN KEY (`IdentiteCh`) REFERENCES `chambre` (`IdentiteCh`) ON DELETE CASCADE ON UPDATE CASCADE;
+
+--
+-- Contraintes pour la table `service`
+--
+ALTER TABLE `service`
+  ADD CONSTRAINT `service_ibfk_1` FOREIGN KEY (`MatriculeRecepteur`) REFERENCES `recepteur` (`MatriculeRecepteur`) ON DELETE CASCADE ON UPDATE CASCADE;

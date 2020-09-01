@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/enveloppe.png</file>
+        <file>images/enveloppe verte.png</file>
+        <file>images/bilan_activites.png</file>
+        <file>images/config_ch.png</file>
+        <file>images/config_type_client.png</file>
+        <file>images/connecter.png</file>
+        <file>images/déconnecter.png</file>
+        <file>images/etat_caisse.png</file>
+        <file>images/gerer_compte.png</file>
+        <file>images/historique_bilan.png</file>
+        <file>images/msgs2.png</file>
+        <file>images/regler_heure.png</file>
+        <file>images/logo.png</file>
+        <file>images/logo_a.png</file>
+        <file>images/actualiser_pf.png</file>
+        <file>maquette/splash screen.jpg</file>
+    </qresource>
+</RCC>

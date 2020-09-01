@@ -1,0 +1,12 @@
+#ifndef LIBCPGFDL_GLOBAL_H
+#define LIBCPGFDL_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(LIBCPGFDL_LIBRARY)
+#  define LIBCPGFDLSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define LIBCPGFDLSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // LIBCPGFDL_GLOBAL_H

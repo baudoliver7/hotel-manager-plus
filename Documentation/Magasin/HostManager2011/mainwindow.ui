@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>950</width>
+    <height>646</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Hotel Manger 2011 - Reception</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="margin">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QMdiArea" name="mdiArea">
+      <property name="minimumSize">
+       <size>
+        <width>950</width>
+        <height>595</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>950</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <addaction name="actionSeConnecter"/>
+    <addaction name="actionSeDeconnecter"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <widget class="QMenu" name="menuEdition">
+    <property name="title">
+     <string>Edition</string>
+    </property>
+    <addaction name="actionRechercherUnClient"/>
+    <addaction name="actionRechercherUneOccupation"/>
+    <addaction name="actionRechercherUneReservation"/>
+   </widget>
+   <widget class="QMenu" name="menuOptions">
+    <property name="title">
+     <string>Options</string>
+    </property>
+    <addaction name="actionActiver_son_de_compagnon"/>
+   </widget>
+   <addaction name="menuFichier"/>
+   <addaction name="menuEdition"/>
+   <addaction name="menuOptions"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionSeConnecter">
+   <property name="text">
+    <string>Se connecter...</string>
+   </property>
+   <property name="toolTip">
+    <string>Se connecter à un compte récepteur</string>
+   </property>
+  </action>
+  <action name="actionSeDeconnecter">
+   <property name="text">
+    <string>Se déconnecter</string>
+   </property>
+   <property name="toolTip">
+    <string>Se déconnecter du compte en cours</string>
+   </property>
+  </action>
+  <action name="actionQuitter">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+  <action name="actionTaches_du_service_en_cours">
+   <property name="text">
+    <string>Tâches du service en cours</string>
+   </property>
+   <property name="toolTip">
+    <string>Tâches minimales à effectuer durant le service</string>
+   </property>
+  </action>
+  <action name="actionRechercherUnClient">
+   <property name="text">
+    <string>Rechercher un client</string>
+   </property>
+   <property name="toolTip">
+    <string>Rechercher un client</string>
+   </property>
+  </action>
+  <action name="actionRechercherUneReservation">
+   <property name="text">
+    <string>Rechercher une réservation</string>
+   </property>
+   <property name="toolTip">
+    <string>Rechercher une réservation</string>
+   </property>
+  </action>
+  <action name="actionRechercherUneOccupation">
+   <property name="text">
+    <string>Rechercher une occupation</string>
+   </property>
+   <property name="toolTip">
+    <string>Rechercher une occupation</string>
+   </property>
+  </action>
+  <action name="actionActiver_son_de_compagnon">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Muter le volume (Agent Hotel Manager)</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

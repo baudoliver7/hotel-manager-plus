@@ -1,0 +1,12 @@
+#ifndef MESTABLES_GLOBAL_H
+#define MESTABLES_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(MESTABLES_LIBRARY)
+#  define MESTABLESSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define MESTABLESSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // MESTABLES_GLOBAL_H

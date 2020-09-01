@@ -1,0 +1,14 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\recuHotel.o
+./debug\textItemMoving.o
+./debug\recuHotelIndividu.o
+./debug\factureHotelIndividu.o
+./debug\factureHotelGroupe.o
+./debug\factureRestoGroupe.o
+./debug\factureRestoIndividu.o
+./debug\recu.o
+./debug\moc_mainwindow.o
+./debug\qrc_images.o
+);

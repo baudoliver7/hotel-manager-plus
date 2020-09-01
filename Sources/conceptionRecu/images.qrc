@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/logo.png</file>
+        <file>images/Capture.PNG</file>
+        <file>images/Facture vierge 2.png</file>
+        <file>images/reçu.png</file>
+        <file>images/Facture groupe.png</file>
+        <file>images/Facture individuelle.png</file>
+        <file>images/Facture resto groupe 1.png</file>
+        <file>images/facture resto individu A4.png</file>
+    </qresource>
+</RCC>

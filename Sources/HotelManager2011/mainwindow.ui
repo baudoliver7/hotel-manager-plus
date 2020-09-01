@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1018</width>
+    <height>676</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Hotel Manger Réception Plus</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/images/logo_r.png</normaloff>:/images/logo_r.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <property name="margin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QFrame" name="frame">
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>52</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <property name="margin">
+        <number>0</number>
+       </property>
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QFrame" name="frame_2">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>52</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QFormLayout" name="formLayout_2">
+          <property name="formAlignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_logo">
+            <property name="maximumSize">
+             <size>
+              <width>38</width>
+              <height>32</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap>:/images/logo.png</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="label_horloge">
+            <property name="maximumSize">
+             <size>
+              <width>180</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QFrame" name="frameMessagerie">
+         <property name="minimumSize">
+          <size>
+           <width>290</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>10000</width>
+           <height>52</height>
+          </size>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QFormLayout" name="formLayout">
+          <property name="labelAlignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="formAlignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="margin">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="labelEnveloppe">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>23</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>23</height>
+             </size>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap>:/images/enveloppe verte.png</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QLabel" name="labelNbMsgNonLus">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>00 messages non lus</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btn_lire">
+              <property name="minimumSize">
+               <size>
+                <width>120</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>120</width>
+                <height>23</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Lire</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QFrame" name="frame_3">
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>52</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QFormLayout" name="formLayout_3">
+          <property name="labelAlignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="formAlignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_heureDeConnection">
+            <property name="maximumSize">
+             <size>
+              <width>390</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::RightToLeft</enum>
+            </property>
+            <property name="text">
+             <string>jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QMdiArea" name="mdiArea">
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1018</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <addaction name="actionSeConnecter"/>
+    <addaction name="actionSeDeconnecter"/>
+    <addaction name="separator"/>
+    <addaction name="actionActiver_un_nouveau_compte"/>
+    <addaction name="separator"/>
+    <addaction name="actionEnregistrer_passe"/>
+    <addaction name="actionEnregistrer_tout"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <widget class="QMenu" name="menuEdition">
+    <property name="title">
+     <string>Editer</string>
+    </property>
+    <addaction name="actionRechercherUnClient"/>
+    <addaction name="actionRechercherUneOccupation"/>
+    <addaction name="actionRechercherUneReservation"/>
+    <addaction name="separator"/>
+    <addaction name="actionEditer_votre_compte"/>
+    <addaction name="separator"/>
+    <addaction name="actionEditer_le_cardex"/>
+   </widget>
+   <widget class="QMenu" name="menuAffichage">
+    <property name="title">
+     <string>Actualiser</string>
+    </property>
+    <addaction name="actionActualiser_la_fen_tre"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>?</string>
+    </property>
+    <addaction name="actionAide_en_ligne"/>
+    <addaction name="separator"/>
+    <addaction name="actionA_propos_de_hotel_manger_plus"/>
+   </widget>
+   <widget class="QMenu" name="menuConfigurer">
+    <property name="title">
+     <string>Compte et groupe</string>
+    </property>
+    <addaction name="actionCreer_Un_compte_client"/>
+    <addaction name="actionDebiterUnCompteClient"/>
+    <addaction name="separator"/>
+    <addaction name="actionCreer_Un_groupe_de_client"/>
+    <addaction name="actionAjouter_un_client_un_groupe"/>
+    <addaction name="actionFacturer_un_groupe_de_client"/>
+    <addaction name="actionRechercher_un_groupe_de_client"/>
+   </widget>
+   <addaction name="menuFichier"/>
+   <addaction name="menuEdition"/>
+   <addaction name="menuConfigurer"/>
+   <addaction name="menuAffichage"/>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::AllToolBarAreas</set>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionSeConnecter"/>
+   <addaction name="actionSeDeconnecter"/>
+   <addaction name="separator"/>
+   <addaction name="actionRechercherUnClient"/>
+   <addaction name="actionRechercherUneOccupation"/>
+   <addaction name="actionRechercherUneReservation"/>
+   <addaction name="actionActualiser_la_fen_tre"/>
+   <addaction name="actionEnvoyer_et_ou_recevoir_des_messages"/>
+   <addaction name="separator"/>
+   <addaction name="actionEnregistrer_tout"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionSeConnecter">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/conpf.png</normaloff>:/images/conpf.png</iconset>
+   </property>
+   <property name="text">
+    <string>Se connecter</string>
+   </property>
+   <property name="toolTip">
+    <string>Se connecter à un compte récepteur</string>
+   </property>
+  </action>
+  <action name="actionSeDeconnecter">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/déconnecter_pf.png</normaloff>:/images/déconnecter_pf.png</iconset>
+   </property>
+   <property name="text">
+    <string>Se déconnecter</string>
+   </property>
+   <property name="toolTip">
+    <string>Se déconnecter du compte en cours</string>
+   </property>
+  </action>
+  <action name="actionQuitter">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+  <action name="actionTaches_du_service_en_cours">
+   <property name="text">
+    <string>Tâches du service en cours</string>
+   </property>
+   <property name="toolTip">
+    <string>Tâches minimales à effectuer durant le service</string>
+   </property>
+  </action>
+  <action name="actionRechercherUnClient">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/recherch_client_pf.png</normaloff>:/images/recherch_client_pf.png</iconset>
+   </property>
+   <property name="text">
+    <string>Rechercher un client</string>
+   </property>
+   <property name="toolTip">
+    <string>Rechercher un client</string>
+   </property>
+  </action>
+  <action name="actionRechercherUneReservation">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/recherch_reserv_pf.png</normaloff>:/images/recherch_reserv_pf.png</iconset>
+   </property>
+   <property name="text">
+    <string>Rechercher une réservation</string>
+   </property>
+   <property name="toolTip">
+    <string>Rechercher une réservation</string>
+   </property>
+  </action>
+  <action name="actionRechercherUneOccupation">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/recherch_loc_pf.png</normaloff>:/images/recherch_loc_pf.png</iconset>
+   </property>
+   <property name="text">
+    <string>Rechercher une location</string>
+   </property>
+   <property name="toolTip">
+    <string>Rechercher une location</string>
+   </property>
+  </action>
+  <action name="actionActiver_son_de_compagnon">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Muter le volume (Agent Hotel Manager)</string>
+   </property>
+  </action>
+  <action name="actionActiver_un_nouveau_compte">
+   <property name="text">
+    <string>Activer un nouveau compte...</string>
+   </property>
+  </action>
+  <action name="actionEditer_votre_compte">
+   <property name="text">
+    <string>Editer votre compte</string>
+   </property>
+  </action>
+  <action name="actionAjuster_Heure_Date">
+   <property name="text">
+    <string>Ajuster Date/Heure</string>
+   </property>
+  </action>
+  <action name="actionActualiser_la_fen_tre">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/actualiser_pf.png</normaloff>:/images/actualiser_pf.png</iconset>
+   </property>
+   <property name="text">
+    <string>Actualiser l'onglet actif</string>
+   </property>
+  </action>
+  <action name="actionEnvoyer_et_ou_recevoir_des_messages">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/msgs2.png</normaloff>:/images/msgs2.png</iconset>
+   </property>
+   <property name="text">
+    <string>Envoyer et/ou recevoir des messages</string>
+   </property>
+  </action>
+  <action name="actionEnregistrer_passe">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/enreg_passe_pf.png</normaloff>:/images/enreg_passe_pf.png</iconset>
+   </property>
+   <property name="text">
+    <string>Enregistrer une passe</string>
+   </property>
+   <property name="toolTip">
+    <string>Enregistrer une passe</string>
+   </property>
+  </action>
+  <action name="actionAide_en_ligne">
+   <property name="text">
+    <string>Aide en ligne</string>
+   </property>
+  </action>
+  <action name="actionA_propos_de_hotel_manger_plus">
+   <property name="text">
+    <string>A propos de Hotel Manger Plus</string>
+   </property>
+  </action>
+  <action name="actionFen_tre_visuelle">
+   <property name="text">
+    <string>Planning simplifié</string>
+   </property>
+  </action>
+  <action name="actionPlanning_complet">
+   <property name="text">
+    <string>Planning complet</string>
+   </property>
+  </action>
+  <action name="actionAfficher_r_servations">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/afficherReservation.png</normaloff>:/images/afficherReservation.png</iconset>
+   </property>
+   <property name="text">
+    <string>Afficher réservations</string>
+   </property>
+  </action>
+  <action name="actionAfficher_locations">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/afficherLocations.png</normaloff>:/images/afficherLocations.png</iconset>
+   </property>
+   <property name="text">
+    <string>Afficher locations</string>
+   </property>
+  </action>
+  <action name="actionAfficher_r_servations_locations">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/afficherMixte.png</normaloff>:/images/afficherMixte.png</iconset>
+   </property>
+   <property name="text">
+    <string>Afficher locations/réservations</string>
+   </property>
+  </action>
+  <action name="actionCreer_Un_compte_client">
+   <property name="text">
+    <string>Créer un compte client</string>
+   </property>
+  </action>
+  <action name="actionCreer_Un_groupe_de_client">
+   <property name="text">
+    <string>Créer un groupe de client</string>
+   </property>
+  </action>
+  <action name="actionDebiterUnCompteClient">
+   <property name="text">
+    <string>Débiter / créditer un compte client</string>
+   </property>
+  </action>
+  <action name="actionFacturer_un_groupe_de_client">
+   <property name="text">
+    <string>Facturer un groupe de client</string>
+   </property>
+  </action>
+  <action name="actionAjouter_un_client_un_groupe">
+   <property name="text">
+    <string>Ajouter / retirer un client d'un groupe</string>
+   </property>
+  </action>
+  <action name="actionRechercher_un_groupe_de_client">
+   <property name="text">
+    <string>Rechercher un groupe de client</string>
+   </property>
+  </action>
+  <action name="actionEditer_le_cardex">
+   <property name="text">
+    <string>Visualiser le cardex</string>
+   </property>
+  </action>
+  <action name="actionEnregistrer_tout">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/save.png</normaloff>:/images/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>Enregistrer tout</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

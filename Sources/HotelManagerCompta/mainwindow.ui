@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="images.qrc">
+    <normaloff>:/images/logo_c.png</normaloff>:/images/logo_c.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="margin">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QMdiArea" name="mdiArea"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionSe_connecter"/>
+   <addaction name="actionSe_d_connecter"/>
+   <addaction name="actionEnvoyer_et_ou_recevoir_des_messages"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <addaction name="actionSe_connecter"/>
+    <addaction name="actionSe_d_connecter"/>
+    <addaction name="separator"/>
+    <addaction name="actionActiver_un_nouveau_compte"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <widget class="QMenu" name="menuEditer">
+    <property name="title">
+     <string>Editer</string>
+    </property>
+    <addaction name="actionEditer_votre_compte"/>
+    <addaction name="separator"/>
+    <addaction name="actionSupprimer_une_op_ration"/>
+    <addaction name="separator"/>
+    <addaction name="actionEditer_les_cl_tures"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>?</string>
+    </property>
+    <addaction name="actionAide_en_ligne"/>
+    <addaction name="separator"/>
+    <addaction name="actionA_propos_de_Hotel_Manager"/>
+   </widget>
+   <widget class="QMenu" name="menuConfiguration">
+    <property name="title">
+     <string>Configurer</string>
+    </property>
+    <addaction name="actionConfigurer_les_comptes"/>
+    <addaction name="actionLa_comptabilit_des_services"/>
+   </widget>
+   <widget class="QMenu" name="menuEx_cuter">
+    <property name="title">
+     <string>Exécuter</string>
+    </property>
+    <addaction name="actionUne_operation"/>
+    <addaction name="actionD_terminer_le_compte_r_sultat"/>
+   </widget>
+   <widget class="QMenu" name="menuPr_f_rences">
+    <property name="title">
+     <string>Afficher</string>
+    </property>
+    <addaction name="actionMes_comptes_en_arbre"/>
+    <addaction name="actionMes_comptes_uniquement"/>
+   </widget>
+   <addaction name="menuFichier"/>
+   <addaction name="menuEditer"/>
+   <addaction name="menuEx_cuter"/>
+   <addaction name="menuConfiguration"/>
+   <addaction name="menuPr_f_rences"/>
+   <addaction name="menu"/>
+  </widget>
+  <action name="actionSe_connecter">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/connecter.png</normaloff>:/images/connecter.png</iconset>
+   </property>
+   <property name="text">
+    <string>Se connecter</string>
+   </property>
+  </action>
+  <action name="actionSe_d_connecter">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/déconnecter.png</normaloff>:/images/déconnecter.png</iconset>
+   </property>
+   <property name="text">
+    <string>Se déconnecter</string>
+   </property>
+  </action>
+  <action name="actionQuitter">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+  <action name="actionEditer_votre_compte">
+   <property name="text">
+    <string>Editer votre compte</string>
+   </property>
+  </action>
+  <action name="actionActiver_un_nouveau_compte">
+   <property name="text">
+    <string>Activer un nouveau compte</string>
+   </property>
+  </action>
+  <action name="actionAide_en_ligne">
+   <property name="text">
+    <string>Aide en ligne</string>
+   </property>
+  </action>
+  <action name="actionA_propos_de_Hotel_Manager">
+   <property name="text">
+    <string>A propos de Hotel Manager Plus</string>
+   </property>
+  </action>
+  <action name="actionEnvoyer_et_ou_recevoir_des_messages">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/msgs2.png</normaloff>:/images/msgs2.png</iconset>
+   </property>
+   <property name="text">
+    <string>Envoyer et/ou recevoir des messages </string>
+   </property>
+   <property name="toolTip">
+    <string>Envoyer et/ou recevoir des messages </string>
+   </property>
+  </action>
+  <action name="actionConfigurer_les_comptes">
+   <property name="text">
+    <string>Les comptes</string>
+   </property>
+  </action>
+  <action name="actionUne_operation">
+   <property name="text">
+    <string>Enregister une nouvelle opération</string>
+   </property>
+  </action>
+  <action name="actionSupprimer_une_op_ration">
+   <property name="text">
+    <string>Supprimer une opération</string>
+   </property>
+  </action>
+  <action name="actionLa_comptabilit_des_services">
+   <property name="text">
+    <string>La comptabilité des services</string>
+   </property>
+  </action>
+  <action name="actionMes_comptes_en_arbre">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>Mes comptes en arbre</string>
+   </property>
+  </action>
+  <action name="actionMes_comptes_uniquement">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Mes comptes uniquement</string>
+   </property>
+  </action>
+  <action name="actionD_terminer_le_compte_r_sultat">
+   <property name="text">
+    <string>Obtenir le compte résultat</string>
+   </property>
+  </action>
+  <action name="actionEditer_les_cl_tures">
+   <property name="text">
+    <string>Editer les clôtures</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/cheese.jpg</file>
+        <file>images/fond bleu ciel.png</file>
+        <file>images/chambre.PNG</file>
+        <file>images/chambre libre.png</file>
+        <file>images/chambre libre clickée.png</file>
+        <file>images/chambre occupée clickée.png</file>
+        <file>images/chambre occupée.png</file>
+        <file>images/flèche bas clickée.png</file>
+        <file>images/flèche bas libre.png</file>
+        <file>images/flèche haut clickée.png</file>
+        <file>images/flèche haut libre.png</file>
+        <file>images/tableau des flèches.png</file>
+        <file>images/flèche bas inactive.png</file>
+        <file>images/flèche haut inactive.png</file>
+    </qresource>
+</RCC>

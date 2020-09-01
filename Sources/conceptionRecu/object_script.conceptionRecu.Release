@@ -1,0 +1,14 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\recuHotel.o
+./release\textItemMoving.o
+./release\recuHotelIndividu.o
+./release\factureHotelIndividu.o
+./release\factureHotelGroupe.o
+./release\factureRestoGroupe.o
+./release\factureRestoIndividu.o
+./release\recu.o
+./release\moc_mainwindow.o
+./release\qrc_images.o
+);

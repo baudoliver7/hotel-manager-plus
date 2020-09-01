@@ -1,0 +1,17 @@
+Pour activer un produit directement, il faut que :
+
+ 	- le poste existe dans la base de données ;
+	- le poste appartienne toujours à l'hotel ;
+	- l'hotel veuille toujours utiliser le poste pour ce produit ;
+	- le produit est été activé au moins une fois sur le poste ;
+	- l'activation est été terminée sur le poste ;
+	- le promoteur soit en règle (Le promoteur a réglé une partie du montant et la période de validité du montant est toujours respectée ou qu'il a tout payé).
+ 
+
+Si le poste est un nouveau poste ou si l'on veut changer de poste ou si l'on veut installer une interface ayant une installation valide sur un autre poste de l'hôtel, il faut obligatoirement la présence physique d'un agent pour le confirmer. Donc pas d'activation.
+
+
+Informations pour activer directement
+
+ clé de permission d'activation du progiciel pour ce id
+ id du progiciel (incorporé dans le produit)

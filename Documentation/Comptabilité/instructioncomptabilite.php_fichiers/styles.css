@@ -1,0 +1,211 @@
+.lienbleu {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	font-weight: normal;
+	color: #0000CC;
+	text-decoration: none;
+
+}
+.textenoir {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+
+}
+.texteorange {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FF6600;
+	text-decoration: none;
+
+
+}
+.titrerouge {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #CC0000;
+	text-decoration: none;
+
+}
+.textenoirgras {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+
+}
+.titrebleu {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #0000FF;
+	text-decoration: none;
+
+
+}
+.titrevert {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #009933;
+}
+.textegrispetit {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: normal;
+	color: #333333;
+	font-style: italic;
+	text-decoration: none;
+
+
+}
+.titrevertgras {
+
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #009933;
+}
+.lienbleugras {
+
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	color: #0033CC;
+	text-decoration: none;
+}
+.baspage {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #000000;
+}
+.baspagegras {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+}
+.boutonbleu {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FFFFFF;
+	background-color: #003366;
+	border: thin solid;
+}
+.petitlien {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: normal;
+	color: #333333;
+}
+.date {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: normal;
+	color: #333333;
+	font-style: italic;
+
+}
+.lienblancgras {
+
+
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: bold;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.textnoirgros {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #333333;
+	font-weight: bolder;
+}
+.texteattention {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #FF0000;
+	font-style: italic;
+}
+.bigrose {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bolder;
+	color: #FF0000;
+}
+.titreblanc {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.titrerougegros {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #CC0000;
+}
+.textnoirgros1 {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	color: #000000;
+	font-weight: bolder;
+}
+.textenoir1 {
+
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #000000;
+	text-decoration: none;
+}
+.titrerougepetit {
+
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #CC0000;
+	text-decoration: none;
+}
+.lienbleu1 {
+
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	color: #0000CC;
+	text-decoration: none;
+}
+.textenoirmilieu {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	color: #000000;
+}
+.tableau {
+	border-top: medium double #00FF00;
+	border-right: medium double #00FF00;
+	border-bottom: medium double #00FF00;
+	border-left: medium double #00FF00;
+}
+.tableaubleu {
+	border: medium double #C6CFD6;
+}

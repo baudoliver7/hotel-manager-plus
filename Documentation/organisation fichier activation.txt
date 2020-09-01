@@ -1,0 +1,5 @@
+appName id  date_activation  duree_activation  duree_tolerance  itEthernet_name itEthernet_adrMac  itWifi_name  itWifi_adrMac   
+
+Clé d'activation : appName&id&dateDebutValidite&tempsValidite&itEthMac&itWifiMac (à envoyer sur la boîte mail du client enregistré);
+
+L'activation doit se faire en ligne pour rédiger le fichier d'activation.

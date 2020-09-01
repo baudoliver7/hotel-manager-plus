@@ -1,0 +1,12 @@
+#ifndef IMPRESSION_GLOBAL_H
+#define IMPRESSION_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(IMPRESSION_LIBRARY)
+#  define IMPRESSIONSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define IMPRESSIONSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // IMPRESSION_GLOBAL_H

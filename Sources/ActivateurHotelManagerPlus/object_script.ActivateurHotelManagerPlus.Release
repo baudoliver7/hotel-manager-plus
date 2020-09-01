@@ -1,0 +1,16 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\MdiModeDiffere.o
+./release\BDConnexion.o
+./release\DialogContact.o
+./release\BDRechercherUtil.o
+./release\BDStatutProduit.o
+./release\moc_mainwindow.o
+./release\moc_MdiModeDiffere.o
+./release\moc_BDConnexion.o
+./release\moc_DialogContact.o
+./release\moc_BDRechercherUtil.o
+./release\moc_BDStatutProduit.o
+./release\qrc_images.o
+);

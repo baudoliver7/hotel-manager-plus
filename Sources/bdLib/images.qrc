@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/logo.png</file>
+        <file>images/Facture vierge 2.png</file>
+        <file>images/enveloppe verte.png</file>
+        <file>images/enveloppe.png</file>
+        <file>images/apropos.jpg</file>
+        <file>images/22352-bubka-Print.png</file>
+        <file>images/wait.png</file>
+        <file>images/verrouiller3.jpg</file>
+        <file>images/Logo_a2.png</file>
+        <file>images/Logo_c2.png</file>
+        <file>images/Logo_r2.png</file>
+        <file>images/Logo_rs2.png</file>
+        <file>images/chargement.png</file>
+        <file>images/executee.png</file>
+        <file>images/indisponible.png</file>
+        <file>images/movie_wait.gif</file>
+        <file>images/occupee.png</file>
+        <file>images/present.png</file>
+        <file>images/reservee.png</file>
+        <file>images/sortie.png</file>
+        <file>images/wait.png</file>
+    </qresource>
+</RCC>

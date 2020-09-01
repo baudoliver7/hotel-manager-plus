@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>son/TYPE.WAV</file>
+        <file>son/APPLAUSE.WAV</file>
+    </qresource>
+</RCC>

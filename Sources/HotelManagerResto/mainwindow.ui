@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1043</width>
+    <height>608</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Hotel Manager Admin 2011 [bienvenue au service administration]</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/images/logo_a.png</normaloff>:/images/logo_a.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <property name="verticalSpacing">
+     <number>0</number>
+    </property>
+    <property name="margin">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QFrame" name="frameHeureServeur">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>52</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QFormLayout" name="formLayout_3">
+          <property name="formAlignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+          </property>
+          <property name="margin">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_logo">
+            <property name="maximumSize">
+             <size>
+              <width>38</width>
+              <height>32</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap>:/images/logo.png</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="label_horloge">
+            <property name="text">
+             <string>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QFrame" name="frameMessagerie">
+         <property name="minimumSize">
+          <size>
+           <width>75</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>100000</width>
+           <height>52</height>
+          </size>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QFormLayout" name="formLayout_2">
+          <property name="labelAlignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="formAlignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="margin">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="labelEnveloppe">
+            <property name="minimumSize">
+             <size>
+              <width>50</width>
+              <height>23</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>23</height>
+             </size>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+            <property name="pixmap">
+             <pixmap>:/images/enveloppe.png</pixmap>
+            </property>
+            <property name="scaledContents">
+             <bool>true</bool>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <layout class="QFormLayout" name="formLayout_5">
+            <property name="fieldGrowthPolicy">
+             <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+            </property>
+            <property name="formAlignment">
+             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+            </property>
+            <item row="0" column="0">
+             <widget class="QLabel" name="labelNbMsgNonLus">
+              <property name="text">
+               <string>TextLabel</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QPushButton" name="btn_lire">
+              <property name="maximumSize">
+               <size>
+                <width>120</width>
+                <height>23</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Lire</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QFrame" name="frameHeureDeConnection">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>52</height>
+          </size>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QFormLayout" name="formLayout">
+          <property name="labelAlignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="formAlignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="margin">
+           <number>0</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_heureDeConnection">
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="text">
+             <string>jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QMdiArea" name="mdiArea">
+      <property name="minimumSize">
+       <size>
+        <width>1000</width>
+        <height>0</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1043</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <addaction name="actionSe_connecter"/>
+    <addaction name="actionSe_d_connecter"/>
+    <addaction name="separator"/>
+    <addaction name="actionActiver_son_compte"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <widget class="QMenu" name="menuEditer">
+    <property name="title">
+     <string>Editer</string>
+    </property>
+    <addaction name="actionChanger_password"/>
+   </widget>
+   <widget class="QMenu" name="menuAide">
+    <property name="title">
+     <string>?</string>
+    </property>
+    <addaction name="actionAide_en_ligne"/>
+    <addaction name="separator"/>
+    <addaction name="actionA_propos_de_Hotel_Manager_Plus"/>
+   </widget>
+   <widget class="QMenu" name="menuRechercher">
+    <property name="title">
+     <string>Rechercher</string>
+    </property>
+    <addaction name="actionFacture_non_pay"/>
+   </widget>
+   <widget class="QMenu" name="menuComptes">
+    <property name="title">
+     <string>Compte</string>
+    </property>
+    <addaction name="actionCr_er_un_compte_client"/>
+    <addaction name="actionD_biter_un_compte_client"/>
+   </widget>
+   <widget class="QMenu" name="menuConfigurer">
+    <property name="title">
+     <string>Configurer</string>
+    </property>
+    <addaction name="actionConfigurer_mes_tables"/>
+    <addaction name="separator"/>
+    <addaction name="actionConfigurer_mon_module"/>
+   </widget>
+   <addaction name="menuFichier"/>
+   <addaction name="menuEditer"/>
+   <addaction name="menuRechercher"/>
+   <addaction name="menuComptes"/>
+   <addaction name="menuConfigurer"/>
+   <addaction name="menuAide"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionSe_connecter"/>
+   <addaction name="actionSe_d_connecter"/>
+   <addaction name="separator"/>
+   <addaction name="actionActualiser_onglet_actif"/>
+   <addaction name="actionEcrire_et_recevoir_des_messages"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionQuitter">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+  <action name="actionChanger_password">
+   <property name="text">
+    <string>Editer votre compte...</string>
+   </property>
+   <property name="toolTip">
+    <string>Changer le mot de passe du compte administrateur en cours</string>
+   </property>
+  </action>
+  <action name="actionSe_connecter_au_service_R_ception">
+   <property name="text">
+    <string>Se connecter au service Réception</string>
+   </property>
+  </action>
+  <action name="actionSe_connecter">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/connecter.png</normaloff>:/images/connecter.png</iconset>
+   </property>
+   <property name="text">
+    <string>Se connecter</string>
+   </property>
+  </action>
+  <action name="actionSe_d_connecter">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/déconnecter.png</normaloff>:/images/déconnecter.png</iconset>
+   </property>
+   <property name="text">
+    <string>Se déconnecter</string>
+   </property>
+  </action>
+  <action name="actionActiver_son_compte">
+   <property name="text">
+    <string>Activer un nouveau compte...</string>
+   </property>
+  </action>
+  <action name="actionEcrire_et_recevoir_des_messages">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/msgs2.png</normaloff>:/images/msgs2.png</iconset>
+   </property>
+   <property name="text">
+    <string>Envoyer et/ou recevoir des messages</string>
+   </property>
+  </action>
+  <action name="actionAide_en_ligne">
+   <property name="text">
+    <string>Aide en ligne</string>
+   </property>
+  </action>
+  <action name="actionA_propos_de_Hotel_Manager_Plus">
+   <property name="text">
+    <string>A propos de Hotel Manager Plus...</string>
+   </property>
+  </action>
+  <action name="actionFacture_non_pay">
+   <property name="text">
+    <string>Factures non payées</string>
+   </property>
+  </action>
+  <action name="actionCr_er_un_compte_client">
+   <property name="text">
+    <string>Créer un compte client</string>
+   </property>
+  </action>
+  <action name="actionD_biter_un_compte_client">
+   <property name="text">
+    <string>Débiter/créditer un compte client</string>
+   </property>
+  </action>
+  <action name="actionConfigurer_mes_tables">
+   <property name="text">
+    <string>Configurer mes tables</string>
+   </property>
+  </action>
+  <action name="actionConfigurer_mon_module">
+   <property name="text">
+    <string>Configurer mon module</string>
+   </property>
+  </action>
+  <action name="actionActualiser_onglet_actif">
+   <property name="icon">
+    <iconset>
+     <normaloff>:/images/actualiser_pf.png</normaloff>:/images/actualiser_pf.png</iconset>
+   </property>
+   <property name="text">
+    <string>Actualiser onglet actif</string>
+   </property>
+   <property name="toolTip">
+    <string>Actualiser onglet actif</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

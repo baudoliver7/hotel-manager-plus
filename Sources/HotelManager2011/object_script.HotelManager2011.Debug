@@ -1,0 +1,13 @@
+INPUT(
+./debug\main.o
+./debug\mainwindow.o
+./debug\MdiPlanning.o
+./debug\PiloteDePlanning.o
+./debug\operation.o
+./debug\moc_mainwindow.o
+./debug\moc_MdiPlanning.o
+./debug\moc_PiloteDePlanning.o
+./debug\moc_operation.o
+./debug\qrc_Background.o
+./debug\qrc_images.o
+);

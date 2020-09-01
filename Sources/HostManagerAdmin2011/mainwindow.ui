@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>683</width>
+    <height>474</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Hotel Manager Admin 2011 [bienvenue au service administration]</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="images.qrc">
+    <normaloff>:/images/logo_a.png</normaloff>:/images/logo_a.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="margin">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QMdiArea" name="mdiArea"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>683</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <addaction name="actionSe_connecter"/>
+    <addaction name="actionSe_d_connecter"/>
+    <addaction name="actionActiver_son_compte"/>
+    <addaction name="separator"/>
+    <addaction name="actionBilanActivitesReception"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <widget class="QMenu" name="menuEditer">
+    <property name="title">
+     <string>Editer</string>
+    </property>
+    <addaction name="actionChanger_password"/>
+    <addaction name="separator"/>
+    <addaction name="actionVisualiser_le_cardex"/>
+   </widget>
+   <widget class="QMenu" name="menuParam_tres">
+    <property name="title">
+     <string>Paramètres</string>
+    </property>
+    <addaction name="actionConfigurer_les_chambres"/>
+    <addaction name="actionConfigurer_le_menu_du_restaurant"/>
+    <addaction name="actionGererDesComptesRecepteur"/>
+    <addaction name="actionConfigurer_heures_de_sortie"/>
+    <addaction name="actionConfigurer_taux_des_taxes"/>
+    <addaction name="actionAjusterDateHeure"/>
+    <addaction name="actionRenseigner_les_informations_sur_votre_h_tel"/>
+   </widget>
+   <widget class="QMenu" name="menuAide">
+    <property name="title">
+     <string>?</string>
+    </property>
+    <addaction name="actionAide_en_ligne"/>
+    <addaction name="separator"/>
+    <addaction name="actionA_propos_de_Hotel_Manager_Plus"/>
+   </widget>
+   <widget class="QMenu" name="menuVisualiser">
+    <property name="title">
+     <string>Visualiser</string>
+    </property>
+    <addaction name="actionLa_r_ception"/>
+   </widget>
+   <widget class="QMenu" name="menuAffichage">
+    <property name="title">
+     <string>Affichage</string>
+    </property>
+    <addaction name="actionActualiser"/>
+   </widget>
+   <addaction name="menuFichier"/>
+   <addaction name="menuEditer"/>
+   <addaction name="menuVisualiser"/>
+   <addaction name="menuParam_tres"/>
+   <addaction name="menuAffichage"/>
+   <addaction name="menuAide"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="floatable">
+    <bool>false</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionSe_connecter"/>
+   <addaction name="actionSe_d_connecter"/>
+   <addaction name="separator"/>
+   <addaction name="actionActualiser"/>
+   <addaction name="separator"/>
+   <addaction name="actionBilanActivitesReception"/>
+   <addaction name="actionLa_r_ception"/>
+   <addaction name="separator"/>
+   <addaction name="actionConfigurer_les_chambres"/>
+   <addaction name="actionGererDesComptesRecepteur"/>
+   <addaction name="actionConfigurer_heures_de_sortie"/>
+   <addaction name="actionEcrire_et_recevoir_des_messages"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionQuitter">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+  <action name="actionChanger_password">
+   <property name="text">
+    <string>Editer votre compte...</string>
+   </property>
+   <property name="toolTip">
+    <string>Changer le mot de passe du compte administrateur en cours</string>
+   </property>
+  </action>
+  <action name="actionConfigurer_les_chambres">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/config_ch.png</normaloff>:/images/config_ch.png</iconset>
+   </property>
+   <property name="text">
+    <string>Configurer les chambres et les profiles client</string>
+   </property>
+   <property name="toolTip">
+    <string>Configurer les chambres</string>
+   </property>
+  </action>
+  <action name="actionGererDesComptesRecepteur">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/gerer_compte.png</normaloff>:/images/gerer_compte.png</iconset>
+   </property>
+   <property name="text">
+    <string>Gérer les comptes...</string>
+   </property>
+   <property name="toolTip">
+    <string>Gérer les comptes récepteur</string>
+   </property>
+  </action>
+  <action name="actionBilanActivitesReception">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/bilan_activites.png</normaloff>:/images/bilan_activites.png</iconset>
+   </property>
+   <property name="text">
+    <string>Bilan des activités de la réception</string>
+   </property>
+   <property name="toolTip">
+    <string>Bilan des activités de la réception</string>
+   </property>
+  </action>
+  <action name="actionAjusterDateHeure">
+   <property name="text">
+    <string>Ajuster Date/Heure...</string>
+   </property>
+   <property name="toolTip">
+    <string>Ajuster la date et l'heure du système</string>
+   </property>
+  </action>
+  <action name="actionSe_connecter_au_service_R_ception">
+   <property name="text">
+    <string>Se connecter au service Réception</string>
+   </property>
+  </action>
+  <action name="actionSe_connecter">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/connecter.png</normaloff>:/images/connecter.png</iconset>
+   </property>
+   <property name="text">
+    <string>Se connecter</string>
+   </property>
+  </action>
+  <action name="actionSe_d_connecter">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/déconnecter.png</normaloff>:/images/déconnecter.png</iconset>
+   </property>
+   <property name="text">
+    <string>Se déconnecter</string>
+   </property>
+  </action>
+  <action name="actionConfigurer_type_de_client">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/config_type_client.png</normaloff>:/images/config_type_client.png</iconset>
+   </property>
+   <property name="text">
+    <string>Configurer les types de client...</string>
+   </property>
+  </action>
+  <action name="actionActiver_son_compte">
+   <property name="text">
+    <string>Activer un nouveau compte...</string>
+   </property>
+  </action>
+  <action name="actionConfigurer_heures_de_sortie">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/regler_heure.png</normaloff>:/images/regler_heure.png</iconset>
+   </property>
+   <property name="text">
+    <string>Configurer heures limites...</string>
+   </property>
+  </action>
+  <action name="actionEcrire_et_recevoir_des_messages">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/msgs2.png</normaloff>:/images/msgs2.png</iconset>
+   </property>
+   <property name="text">
+    <string>Envoyer et/ou recevoir des messages</string>
+   </property>
+  </action>
+  <action name="actionAide_en_ligne">
+   <property name="text">
+    <string>Aide en ligne</string>
+   </property>
+  </action>
+  <action name="actionA_propos_de_Hotel_Manager_Plus">
+   <property name="text">
+    <string>A propos de Hotel Manager Plus...</string>
+   </property>
+  </action>
+  <action name="actionObserver_la_tr_sorerie">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/etat_caisse.png</normaloff>:/images/etat_caisse.png</iconset>
+   </property>
+   <property name="text">
+    <string>Etat de la trésorerie</string>
+   </property>
+  </action>
+  <action name="actionHistorique_des_bilans_journaliers">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/historique_bilan.png</normaloff>:/images/historique_bilan.png</iconset>
+   </property>
+   <property name="text">
+    <string>Historique des bilans journaliers</string>
+   </property>
+  </action>
+  <action name="actionInformations_g_n_rales">
+   <property name="text">
+    <string>Informations générales</string>
+   </property>
+  </action>
+  <action name="actionRenseigner_les_informations_sur_votre_h_tel">
+   <property name="text">
+    <string>Renseigner les informations sur votre hôtel</string>
+   </property>
+  </action>
+  <action name="actionConfigurer_le_menu_du_restaurant">
+   <property name="text">
+    <string>Configurer le menu du restaurant</string>
+   </property>
+  </action>
+  <action name="actionVisualiser_le_cardex">
+   <property name="text">
+    <string>Visualiser le cardex</string>
+   </property>
+  </action>
+  <action name="actionConfigurer_taux_des_taxes">
+   <property name="text">
+    <string>Configurer taux des taxes</string>
+   </property>
+  </action>
+  <action name="actionLa_r_ception">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/booking_button.png</normaloff>:/images/booking_button.png</iconset>
+   </property>
+   <property name="text">
+    <string>La réception</string>
+   </property>
+   <property name="toolTip">
+    <string>Visualiser la réception</string>
+   </property>
+  </action>
+  <action name="actionActualiser">
+   <property name="icon">
+    <iconset resource="images.qrc">
+     <normaloff>:/images/actualiser.png</normaloff>:/images/actualiser.png</iconset>
+   </property>
+   <property name="text">
+    <string>Actualiser</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>482</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>600</width>
+    <height>482</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>600</width>
+    <height>482</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Activateur master de Hotel Manager Plus</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="images.qrc">
+    <normaloff>:/images/logo.png</normaloff>:/images/logo.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="margin">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QMdiArea" name="mdiArea"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <widget class="QMenu" name="menuMode_d_activation">
+     <property name="title">
+      <string>Mode d'activation</string>
+     </property>
+     <addaction name="actionEn_diff_r"/>
+     <addaction name="actionEn_ligne"/>
+    </widget>
+    <addaction name="menuMode_d_activation"/>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <widget class="QMenu" name="menuConfiguration">
+    <property name="title">
+     <string>Configuration</string>
+    </property>
+    <widget class="QMenu" name="menuDriver_odbc">
+     <property name="title">
+      <string>Driver odbc</string>
+     </property>
+     <addaction name="actionWin32"/>
+     <addaction name="actionWin64"/>
+    </widget>
+    <addaction name="actionStatut_d_un_produit"/>
+    <addaction name="menuDriver_odbc"/>
+   </widget>
+   <addaction name="menuFichier"/>
+   <addaction name="menuConfiguration"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionEn_diff_r">
+   <property name="text">
+    <string>En différé</string>
+   </property>
+  </action>
+  <action name="actionEn_ligne">
+   <property name="text">
+    <string>En ligne</string>
+   </property>
+  </action>
+  <action name="actionQuitter">
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+  <action name="actionStatut_d_un_produit">
+   <property name="text">
+    <string>Statut d'un produit</string>
+   </property>
+  </action>
+  <action name="actionWin32">
+   <property name="text">
+    <string>win32</string>
+   </property>
+  </action>
+  <action name="actionWin64">
+   <property name="text">
+    <string>win64</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

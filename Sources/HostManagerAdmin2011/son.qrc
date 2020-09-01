@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>son/CHIMES.WAV</file>
+    </qresource>
+</RCC>

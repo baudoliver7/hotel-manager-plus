@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/enveloppe.jpg</file>
+        <file>images/horloge.jpg</file>
+        <file>images/compagnon.jpg</file>
+    </qresource>
+</RCC>

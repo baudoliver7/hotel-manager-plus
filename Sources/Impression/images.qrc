@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/Facture bar groupe 1.png</file>
+        <file>images/Facture groupe.png</file>
+        <file>images/Facture individuelle.png</file>
+        <file>images/Facture resto groupe 1.png</file>
+        <file>images/facture resto individu A4.png</file>
+        <file>images/reçu.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,13 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\MdiPlanning.o
+./release\PiloteDePlanning.o
+./release\operation.o
+./release\moc_mainwindow.o
+./release\moc_MdiPlanning.o
+./release\moc_PiloteDePlanning.o
+./release\moc_operation.o
+./release\qrc_Background.o
+./release\qrc_images.o
+);

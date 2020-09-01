@@ -1,0 +1,1072 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MdiService</class>
+ <widget class="QWidget" name="MdiService">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>983</width>
+    <height>647</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_7">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Activités</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="1" column="0">
+       <widget class="QTabWidget" name="tabWidget">
+        <property name="currentIndex">
+         <number>2</number>
+        </property>
+        <widget class="QWidget" name="tab">
+         <attribute name="title">
+          <string>Consommations de ce jour</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="0" column="0">
+           <layout class="QFormLayout" name="formLayoutPeriode">
+            <item row="0" column="0">
+             <widget class="QRadioButton" name="rb_aujourdhui">
+              <property name="text">
+               <string>Aujourd'hui</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <layout class="QFormLayout" name="formLayout_2">
+              <item row="0" column="0">
+               <widget class="QRadioButton" name="rb_periode">
+                <property name="text">
+                 <string>Periode allant de </string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <layout class="QFormLayout" name="formLayout">
+                <item row="0" column="0">
+                 <widget class="QSplitter" name="splitterDebut">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QSplitter" name="splitter">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <widget class="QLineEdit" name="lineEditDebut">
+                    <property name="maximumSize">
+                     <size>
+                      <width>150</width>
+                      <height>150</height>
+                     </size>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                    </property>
+                    <property name="readOnly">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                   <widget class="QToolButton" name="btn_debut">
+                    <property name="maximumSize">
+                     <size>
+                      <width>30</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>...</string>
+                    </property>
+                   </widget>
+                  </widget>
+                  <widget class="QLabel" name="label">
+                   <property name="text">
+                    <string>à</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QSplitter" name="splitterFin">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <widget class="QLineEdit" name="lineEditFin">
+                   <property name="maximumSize">
+                    <size>
+                     <width>150</width>
+                     <height>150</height>
+                    </size>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                   </property>
+                   <property name="readOnly">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                  <widget class="QToolButton" name="btn_fin">
+                   <property name="maximumSize">
+                    <size>
+                     <width>30</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>...</string>
+                   </property>
+                  </widget>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0" colspan="3">
+           <widget class="QTableWidget" name="tableWidget">
+            <property name="selectionMode">
+             <enum>QAbstractItemView::SingleSelection</enum>
+            </property>
+            <property name="selectionBehavior">
+             <enum>QAbstractItemView::SelectRows</enum>
+            </property>
+            <attribute name="horizontalHeaderDefaultSectionSize">
+             <number>150</number>
+            </attribute>
+            <attribute name="verticalHeaderDefaultSectionSize">
+             <number>25</number>
+            </attribute>
+            <attribute name="verticalHeaderDefaultSectionSize">
+             <number>25</number>
+            </attribute>
+            <attribute name="horizontalHeaderDefaultSectionSize">
+             <number>150</number>
+            </attribute>
+            <column>
+             <property name="text">
+              <string>Facture</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Client</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Date arrivée</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Date départ</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Durée</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Total à payer</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Montant encaissé</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Montant restant</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Matricule du caissier</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>IdRepasCResto</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <layout class="QFormLayout" name="formLayout_6">
+            <item row="0" column="0">
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <item>
+               <widget class="QLabel" name="label_6">
+                <property name="text">
+                 <string>Montant encaissé :</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEditMontantEncaisse">
+                <property name="maximumSize">
+                 <size>
+                  <width>133</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="0" column="1">
+             <layout class="QFormLayout" name="formLayout_10">
+              <property name="fieldGrowthPolicy">
+               <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+              </property>
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_8">
+                <property name="maximumSize">
+                 <size>
+                  <width>85</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Montant restant :</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="lineEditMontantRestant">
+                <property name="maximumSize">
+                 <size>
+                  <width>133</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item row="2" column="2">
+           <widget class="QPushButton" name="btn_details">
+            <property name="maximumSize">
+             <size>
+              <width>75</width>
+              <height>23</height>
+             </size>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::RightToLeft</enum>
+            </property>
+            <property name="text">
+             <string>Détails</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QPushButton" name="btn_imprimerFacture">
+            <property name="maximumSize">
+             <size>
+              <width>75</width>
+              <height>23</height>
+             </size>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::RightToLeft</enum>
+            </property>
+            <property name="text">
+             <string>Imprimer</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_3">
+         <attribute name="title">
+          <string>Activités</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_6">
+          <item row="0" column="0" colspan="3">
+           <widget class="QTableView" name="tableViewActivites">
+            <property name="selectionMode">
+             <enum>QAbstractItemView::SingleSelection</enum>
+            </property>
+            <property name="selectionBehavior">
+             <enum>QAbstractItemView::SelectRows</enum>
+            </property>
+            <attribute name="horizontalHeaderDefaultSectionSize">
+             <number>210</number>
+            </attribute>
+            <attribute name="verticalHeaderDefaultSectionSize">
+             <number>25</number>
+            </attribute>
+            <attribute name="verticalHeaderDefaultSectionSize">
+             <number>25</number>
+            </attribute>
+            <attribute name="horizontalHeaderDefaultSectionSize">
+             <number>210</number>
+            </attribute>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <layout class="QFormLayout" name="formLayout_3">
+            <item row="0" column="0">
+             <layout class="QHBoxLayout" name="horizontalLayout_2">
+              <property name="rightMargin">
+               <number>9</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="label_10">
+                <property name="text">
+                 <string>Montant total encaissé :</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="lineEditMontantTotalEncaisse">
+                <property name="maximumSize">
+                 <size>
+                  <width>133</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="0" column="1">
+             <layout class="QFormLayout" name="formLayout_14">
+              <property name="formAlignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+              </property>
+              <property name="rightMargin">
+               <number>9</number>
+              </property>
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_13">
+                <property name="text">
+                 <string>Montant total retiré :</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="lineEditMontantTotalRetire">
+                <property name="maximumSize">
+                 <size>
+                  <width>133</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+                <property name="readOnly">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="btn_imprimerRecu">
+            <property name="maximumSize">
+             <size>
+              <width>75</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Imprimer</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QPushButton" name="btn_cloturer">
+            <property name="maximumSize">
+             <size>
+              <width>75</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Clôturer </string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QWidget" name="tab_2">
+         <attribute name="title">
+          <string>Tableau de bord</string>
+         </attribute>
+         <layout class="QGridLayout" name="gridLayout_8">
+          <item row="0" column="0">
+           <widget class="QTreeWidget" name="treeWidgetTablesOccupees">
+            <property name="maximumSize">
+             <size>
+              <width>170</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <column>
+             <property name="text">
+              <string>Tables occupées</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item row="0" column="1" rowspan="3">
+           <widget class="QGroupBox" name="groupBoxTable">
+            <property name="title">
+             <string>Table 1</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_9">
+             <item row="0" column="0" rowspan="2">
+              <widget class="QTreeWidget" name="treeWidgetConsommations">
+               <property name="uniformRowHeights">
+                <bool>false</bool>
+               </property>
+               <attribute name="headerDefaultSectionSize">
+                <number>170</number>
+               </attribute>
+               <attribute name="headerMinimumSectionSize">
+                <number>100</number>
+               </attribute>
+               <attribute name="headerStretchLastSection">
+                <bool>false</bool>
+               </attribute>
+               <attribute name="headerDefaultSectionSize">
+                <number>170</number>
+               </attribute>
+               <attribute name="headerMinimumSectionSize">
+                <number>100</number>
+               </attribute>
+               <attribute name="headerStretchLastSection">
+                <bool>false</bool>
+               </attribute>
+               <column>
+                <property name="text">
+                 <string>Menu</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Prix unitaire</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Quantité</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>Prix total</string>
+                </property>
+               </column>
+               <column>
+                <property name="text">
+                 <string>idConsoRepas</string>
+                </property>
+               </column>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QGroupBox" name="groupBox_3">
+               <property name="maximumSize">
+                <size>
+                 <width>375</width>
+                 <height>153</height>
+                </size>
+               </property>
+               <property name="title">
+                <string>Détails sur le service</string>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_4">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_18">
+                  <property name="text">
+                   <string>Date d'arrivée :</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1" colspan="2">
+                 <widget class="QLabel" name="labelDateArrivee">
+                  <property name="text">
+                   <string>Vendredi le 12 mars 2012 à 12 h 34 min 50 s</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0" colspan="2">
+                 <layout class="QVBoxLayout" name="verticalLayout_3">
+                  <item>
+                   <widget class="QLabel" name="label_20">
+                    <property name="text">
+                     <string>Client :</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_21">
+                    <property name="text">
+                     <string>Total à payer :</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_24">
+                    <property name="text">
+                     <string>Montant encaissé :</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_22">
+                    <property name="text">
+                     <string>Reste à payer :</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_23">
+                    <property name="text">
+                     <string>Durée d'occupation :</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item row="1" column="2">
+                 <layout class="QFormLayout" name="formLayout_5">
+                  <item row="0" column="0">
+                   <layout class="QVBoxLayout" name="verticalLayout_4">
+                    <item>
+                     <widget class="QLabel" name="labelClient">
+                      <property name="text">
+                       <string>OURA Olivier Baudouin</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="labelTotalAPayer">
+                      <property name="text">
+                       <string>12 000</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="labelMontantEncaisse">
+                      <property name="text">
+                       <string>0</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="labelResteAPayer">
+                      <property name="text">
+                       <string>12 000</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="labelDureeOccupation">
+                      <property name="text">
+                       <string>20 minutes</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QToolButton" name="btn_identifierClient">
+                    <property name="maximumSize">
+                     <size>
+                      <width>25</width>
+                      <height>17</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>...</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QGroupBox" name="groupBox_2">
+               <property name="maximumSize">
+                <size>
+                 <width>375</width>
+                 <height>150</height>
+                </size>
+               </property>
+               <property name="title">
+                <string>Règlement</string>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_5">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_11">
+                  <property name="text">
+                   <string>Mode de payement :</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="1">
+                 <widget class="QComboBox" name="comboBoxModeDePaye">
+                  <property name="sizeAdjustPolicy">
+                   <enum>QComboBox::AdjustToContents</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QLabel" name="label_7">
+                  <property name="text">
+                   <string>Compte :</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="1">
+                 <widget class="QComboBox" name="comboBoxCompteClient">
+                  <property name="sizeAdjustPolicy">
+                   <enum>QComboBox::AdjustToContents</enum>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="2">
+                 <layout class="QFormLayout" name="formLayout_12">
+                  <item row="0" column="0">
+                   <widget class="QLabel" name="label_9">
+                    <property name="text">
+                     <string>Solde :</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="0" column="1">
+                   <widget class="QLineEdit" name="lineEditSolde">
+                    <property name="alignment">
+                     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                    </property>
+                    <property name="readOnly">
+                     <bool>true</bool>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QLabel" name="label_28">
+                  <property name="text">
+                   <string>Montant:</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="1">
+                 <widget class="QSpinBox" name="spinBoxEncaissement">
+                  <property name="maximumSize">
+                   <size>
+                    <width>120</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="singleStep">
+                   <number>500</number>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QPushButton" name="btn_supprimerMenu">
+               <property name="maximumSize">
+                <size>
+                 <width>75</width>
+                 <height>23</height>
+                </size>
+               </property>
+               <property name="layoutDirection">
+                <enum>Qt::RightToLeft</enum>
+               </property>
+               <property name="text">
+                <string>Supprimer</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <layout class="QFormLayout" name="formLayout_19">
+               <property name="fieldGrowthPolicy">
+                <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+               </property>
+               <property name="formAlignment">
+                <set>Qt::AlignBottom|Qt::AlignRight|Qt::AlignTrailing</set>
+               </property>
+               <property name="rightMargin">
+                <number>7</number>
+               </property>
+               <item row="0" column="0">
+                <widget class="QPushButton" name="btn_imprimer_tab_bord">
+                 <property name="maximumSize">
+                  <size>
+                   <width>130</width>
+                   <height>23</height>
+                  </size>
+                 </property>
+                 <property name="layoutDirection">
+                  <enum>Qt::RightToLeft</enum>
+                 </property>
+                 <property name="text">
+                  <string>Imprimer la facture</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QPushButton" name="btn_terminer">
+                 <property name="maximumSize">
+                  <size>
+                   <width>75</width>
+                   <height>23</height>
+                  </size>
+                 </property>
+                 <property name="layoutDirection">
+                  <enum>Qt::RightToLeft</enum>
+                 </property>
+                 <property name="text">
+                  <string>Terminer</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QTreeWidget" name="treeWidgetTablesLibres">
+            <property name="maximumSize">
+             <size>
+              <width>170</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <column>
+             <property name="text">
+              <string>Tables libres</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QPushButton" name="btn_occuper">
+            <property name="maximumSize">
+             <size>
+              <width>75</width>
+              <height>23</height>
+             </size>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::RightToLeft</enum>
+            </property>
+            <property name="text">
+             <string>Occuper</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QGroupBox" name="groupBoxEnreg">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>171</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>Exécuter une commande pour la table 1</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_10">
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_12">
+        <property name="text">
+         <string>Catégorie :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QComboBox" name="comboBoxCategorie"/>
+      </item>
+      <item row="0" column="4" rowspan="3">
+       <widget class="QGroupBox" name="groupBox_6">
+        <property name="title">
+         <string>Panier</string>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="0">
+          <widget class="QListWidget" name="listWidget">
+           <property name="selectionBehavior">
+            <enum>QAbstractItemView::SelectRows</enum>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <layout class="QFormLayout" name="formLayout_13">
+           <item row="0" column="0">
+            <widget class="QLabel" name="labelCumul">
+             <property name="text">
+              <string>Montant cumulé = 0 </string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QPushButton" name="btn_supprimer">
+             <property name="maximumSize">
+              <size>
+               <width>75</width>
+               <height>23</height>
+              </size>
+             </property>
+             <property name="layoutDirection">
+              <enum>Qt::RightToLeft</enum>
+             </property>
+             <property name="text">
+              <string>Supprimer</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Menu :</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QComboBox" name="comboBoxMenu">
+        <property name="sizeAdjustPolicy">
+         <enum>QComboBox::AdjustToContents</enum>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="2" rowspan="2">
+       <layout class="QFormLayout" name="formLayout_4">
+        <item row="0" column="0">
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>Prix unitaire :</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>Quantité :</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="1">
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QSpinBox" name="spinBoxPrixUnitaire">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="maximum">
+             <number>0</number>
+            </property>
+            <property name="singleStep">
+             <number>500</number>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QSpinBox" name="spinBoxQuantite">
+            <property name="maximumSize">
+             <size>
+              <width>150</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="minimum">
+             <number>1</number>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item row="1" column="3">
+       <widget class="QCheckBox" name="checkBoxModifierPrix">
+        <property name="text">
+         <string>Modifier le prix</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="3">
+       <layout class="QFormLayout" name="formLayout_11">
+        <item row="0" column="0">
+         <layout class="QFormLayout" name="formLayout_8">
+          <property name="formAlignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <item row="0" column="1">
+           <widget class="QLineEdit" name="lineEditPrixTotal">
+            <property name="maximumSize">
+             <size>
+              <width>133</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+            </property>
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>Prix total :</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="btn_ajouter">
+          <property name="maximumSize">
+           <size>
+            <width>75</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Ajouter</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="3" column="4">
+       <layout class="QFormLayout" name="formLayout_7">
+        <property name="formAlignment">
+         <set>Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing</set>
+        </property>
+        <property name="rightMargin">
+         <number>7</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QPushButton" name="btn_enregistrer">
+          <property name="maximumSize">
+           <size>
+            <width>75</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Exécuter</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QPushButton" name="btn_initialiser">
+          <property name="maximumSize">
+           <size>
+            <width>75</width>
+            <height>23</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Initialiser</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

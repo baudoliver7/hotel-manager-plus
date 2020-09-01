@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DialogRechercherUnClient</class>
+ <widget class="QDialog" name="DialogRechercherUnClient">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1101</width>
+    <height>479</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Rechercher un client</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_4">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Sexe</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QRadioButton" name="Masculin">
+        <property name="text">
+         <string>Masculin</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QRadioButton" name="Feminin">
+        <property name="text">
+         <string>Féminin</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Nom :</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEditNom"/>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="2">
+    <widget class="QRadioButton" name="rb_clientsCrediteurs">
+     <property name="text">
+      <string>Sélectionner les clients qui doivent</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="3">
+    <widget class="QGroupBox" name="groupBoxListeClients">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>Liste de clients</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="0" column="0">
+       <widget class="QTableView" name="tableViewClients">
+        <property name="selectionMode">
+         <enum>QAbstractItemView::SingleSelection</enum>
+        </property>
+        <property name="selectionBehavior">
+         <enum>QAbstractItemView::SelectRows</enum>
+        </property>
+        <property name="textElideMode">
+         <enum>Qt::ElideMiddle</enum>
+        </property>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>150</number>
+        </attribute>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>150</number>
+        </attribute>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="3">
+    <widget class="QGroupBox" name="groupBoxDetails">
+     <property name="minimumSize">
+      <size>
+       <width>461</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>291</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>Locations faites par le client sélectionné (0 non réglée(s))</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0" colspan="2">
+       <widget class="QTableWidget" name="tableWidget">
+        <property name="selectionMode">
+         <enum>QAbstractItemView::SingleSelection</enum>
+        </property>
+        <property name="selectionBehavior">
+         <enum>QAbstractItemView::SelectRows</enum>
+        </property>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>210</number>
+        </attribute>
+        <attribute name="horizontalHeaderStretchLastSection">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="horizontalHeaderStretchLastSection">
+         <bool>true</bool>
+        </attribute>
+        <attribute name="horizontalHeaderDefaultSectionSize">
+         <number>210</number>
+        </attribute>
+        <column>
+         <property name="text">
+          <string>Chambre</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Date d'entrée</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Date de sortie</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Durée</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Prix total</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Montant payé</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>Montant restant</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>NumOccup</string>
+         </property>
+        </column>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="2">
+       <layout class="QFormLayout" name="formLayout_3">
+        <property name="formAlignment">
+         <set>Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing</set>
+        </property>
+        <property name="rightMargin">
+         <number>7</number>
+        </property>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Montant de règlement :</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QSpinBox" name="spinBoxMR">
+          <property name="maximumSize">
+           <size>
+            <width>100</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="maximum">
+           <number>1000000000</number>
+          </property>
+          <property name="singleStep">
+           <number>500</number>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="0">
+       <widget class="QRadioButton" name="rb_enEspeces">
+        <property name="text">
+         <string>en espèces</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="1">
+       <widget class="QRadioButton" name="rb_compteBancaire">
+        <property name="text">
+         <string>par chèque</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="2">
+    <layout class="QFormLayout" name="formLayout_2">
+     <item row="0" column="0">
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="maximumSize">
+          <size>
+           <width>37</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Action :</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBoxAction">
+         <property name="maximumSize">
+          <size>
+           <width>140</width>
+           <height>16777215</height>
+          </size>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QComboBox::AdjustToContents</enum>
+         </property>
+         <item>
+          <property name="text">
+           <string>occuper une chambre</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>réserver une chambre</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="btn_OK">
+       <property name="maximumSize">
+        <size>
+         <width>95</width>
+         <height>23</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Exécuter</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="2">
+    <widget class="QPushButton" name="btn_details">
+     <property name="maximumSize">
+      <size>
+       <width>75</width>
+       <height>23</height>
+      </size>
+     </property>
+     <property name="text">
+      <string>Détails &gt;&gt;</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="2">
+    <layout class="QFormLayout" name="formLayout">
+     <property name="formAlignment">
+      <set>Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing</set>
+     </property>
+     <property name="rightMargin">
+      <number>9</number>
+     </property>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="btn_Annuler">
+       <property name="maximumSize">
+        <size>
+         <width>75</width>
+         <height>23</height>
+        </size>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="text">
+        <string>Fermer</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QPushButton" name="btn_appliquer">
+       <property name="maximumSize">
+        <size>
+         <width>75</width>
+         <height>23</height>
+        </size>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="text">
+        <string>Appliquer</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
