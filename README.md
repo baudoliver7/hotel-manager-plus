@@ -1,2 +1,2 @@
-# hotel-manager-plus
+# Hotel Manager Plus
 Hotel Manager Plus
